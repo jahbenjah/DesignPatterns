@@ -2,6 +2,6 @@
 
 public interface IUserDatabase
 {
-    User ReadUser(string userName);
-    void WriteUser(User user);
+    Task<User> ReadUser(string userName);
+    Task<bool> WriteUser(User user);
 }
