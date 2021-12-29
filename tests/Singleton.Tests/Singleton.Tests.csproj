@@ -21,7 +21,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Singleton\Singleton.csproj" />
+    <ProjectReference Include="..\..\src\Singleton\Singleton.csproj" />
   </ItemGroup>
 
 </Project>
