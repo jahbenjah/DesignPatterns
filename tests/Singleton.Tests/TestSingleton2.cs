@@ -9,6 +9,7 @@ public class TestSingleton2
     [Fact]
     public void TestCreateSingleton2()
     {
+        //Singleton s1 = new Singleton();
         Singleton2 s = Singleton2.GetInstance();
         Singleton2 s2 = Singleton2.GetInstance();
         Assert.Equal(s, s2);

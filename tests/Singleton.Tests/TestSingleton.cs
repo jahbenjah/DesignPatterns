@@ -11,15 +11,16 @@ public class TestSingleton
         Singleton s = Singleton.Instance;
         Singleton s2 = Singleton.Instance;
         Assert.Equal(s, s2);
+        //Singleton.Instance = Singleton.Instance;
     }
 
     [Fact]
     public void TestNoPublicConstructors()
     {
         Type singleton = typeof(Singleton);
-        ConstructorInfo[] ctrs = singleton.GetConstructors();
+        ConstructorInfo[] constructors = singleton.GetConstructors();
         bool hasPublicConstructor = false;
-        foreach (ConstructorInfo c in ctrs)
+        foreach (ConstructorInfo c in constructors)
         {
             if (c.IsPublic)
             {

@@ -3,7 +3,9 @@
 public class Singleton
 {
     private static Singleton _instance = null;
-    private Singleton() { }
+    private Singleton() 
+    {
+    }
 
     public static Singleton Instance
     {
@@ -14,4 +16,5 @@ public class Singleton
             return _instance;
         }
     }
+
 }

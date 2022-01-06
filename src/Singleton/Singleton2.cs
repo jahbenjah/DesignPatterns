@@ -16,3 +16,11 @@ public sealed class Singleton2
         // ...
     }
 }
+
+
+//public class MyClass : Singleton
+//{
+//}
+//public class OtherClass : Singleton2
+//{
+//}
